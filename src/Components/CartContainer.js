@@ -1,4 +1,5 @@
 import React from "react";
+import CartItem from "./CartItem";
 
 const CartContainer = () => {
   return (
@@ -6,7 +7,9 @@ const CartContainer = () => {
       <header>
         <h2>Your Bag</h2>
       </header>
-      <article></article>
+      <article>
+        <CartItem />
+      </article>
       <footer>
         <hr />
         <div className="cart-total">
