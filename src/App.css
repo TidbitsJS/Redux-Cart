@@ -8,6 +8,11 @@ body {
   background: #f1f5f8;
   color: #102a42;
   font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -108,11 +113,18 @@ nav svg {
 }
 
 .cart {
-  min-height: calc(100vh- 80px);
+  min-height: calc(100vh - 80px);
   width: 90vw;
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   max-width: 50vw;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .cart {
+    max-width: 100vw;
+  }
 }
 
 .cart h2 {
@@ -129,7 +141,7 @@ nav svg {
 }
 
 .cart footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -145,7 +157,7 @@ nav svg {
   padding: 0.7rem 1rem;
   color: hsl(360, 67%, 44%);
   border: 1px solid hsl(360, 67%, 44%);
-  margin-top: 2.25rem;
+  margin-top: 1.5rem;
 }
 
 .clear-btn:hover {
