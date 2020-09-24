@@ -9,7 +9,7 @@ const CartContainer = () => {
       <article></article>
       <footer>
         <hr />
-        <div className="card-total">
+        <div className="cart-total">
           <h4>
             Total <span>total</span>
           </h4>
