@@ -3,21 +3,11 @@ import { connect } from "react-redux";
 import {
   INCREASE,
   DECREASE,
-  REMOVE,
   TOGGLE_AMOUNT,
   removeItem,
 } from "../Container/Action";
 
-const CartItem = ({
-  img,
-  title,
-  price,
-  amount,
-  remove,
-  increase,
-  decrease,
-  toggle,
-}) => {
+const CartItem = ({ img, title, price, amount, remove, toggle }) => {
   return (
     <div className="cart-item">
       <img src={img} alt={title} />
